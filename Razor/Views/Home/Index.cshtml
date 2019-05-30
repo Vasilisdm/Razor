@@ -11,6 +11,8 @@
     <title>Product Information</title>
 </head>
 <body>
-    Product Name: @Model.Name
+    <p>Product Name: @Model.Name</p>
+    <p>Product Price: @($"{Model.Price:C2}")</p>
+    <p>Product Stock: @ViewBag.StockLevel</p>
 </body>
 </html>
