@@ -3,7 +3,7 @@ using Razor.Models;
 
 namespace Razor.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
         public ViewResult Index()
         {
