@@ -11,8 +11,10 @@
     <title>Product Information</title>
 </head>
 <body>
-    <p>Product Name: @Model.Name</p>
-    <p>Product Price: @($"{Model.Price:C2}")</p>
-    <p>Product Stock: @ViewBag.StockLevel</p>
+    <div data-productid="@Model.ProductId" data-stocklevel="@ViewBag.StockLevel">
+        <p>Product Name: @Model.Name</p>
+        <p>Product Price: @($"{Model.Price:C2}")</p>
+        <p>Product Stock: @ViewBag.StockLevel</p>
+    </div>
 </body>
 </html>
