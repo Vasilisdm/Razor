@@ -53,7 +53,7 @@ namespace Razor
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
